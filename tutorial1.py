@@ -12,7 +12,7 @@ black = Color(0x000000, 1.0)
 thinline = LineStyle(1, black)
 # A graphics asset that represents a rectangle
 ellipse = EllipseAsset(20,30, thinline, blue)
-ploygon = PolygonAsset([(0,0), (50,0), (50,50), (0,50), (0,0)], thinline, red)
+polygon = PolygonAsset([(0,0), (50,0), (50,50), (0,50), (0,0)], thinline, red)
 
 # Now display a rectangle
 Sprite(ellipse)
