@@ -15,7 +15,8 @@ square1 = RectangleAsset(50, 50, thinline, blue)
 square2 = RectangleAsset(20, 20, thinline, red)
 
 # Now display a rectangle
-Sprite(rectangle)
+Sprite(square1)
+Sprite(square2)
 
 myapp = App()
 myapp.run()
