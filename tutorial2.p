@@ -24,7 +24,7 @@ whiteline = LineStyle(1, white)
 thinline = LineStyle(1, black)
 bluecircle = CircleAsset(5, blueline, blue)
 redcircle = CircleAsset(5, redline, red)
-xcoordinates = range(100, 600, 10)
+xcoordinates = list(range(100, 600, 10))
 
 # Generate a list of sprites that form a line!
 bluesprites = [Sprite(bluecircle, (x, x*0.5 + 100)) for x in xcoordinates]
