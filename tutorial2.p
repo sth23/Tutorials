@@ -22,11 +22,13 @@ purpleline = LineStyle(1, purple)
 whiteline = LineStyle(1, white)
 
 thinline = LineStyle(1, black)
-mycircle = CircleAsset(5, thinline, blue)
+bluecircle = CircleAsset(5, blueline, blue)
+redcircle = CircleAsset(5, redline, red)
 xcoordinates = range(100, 600, 10)
 
 # Generate a list of sprites that form a line!
-sprites = [Sprite(mycircle, (x, x*0.5 + 100)) for x in xcoordinates]
+bluesprites = [Sprite(bluecircle, (x, x*0.5 + 100)) for x in xcoordinates]
+redsprites = [Sprite(redcircle, (x, x*0.5 + 50)) for x in xcoordinates]
 
 myapp = App()
 myapp.run()
